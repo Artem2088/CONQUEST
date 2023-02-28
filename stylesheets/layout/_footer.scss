@@ -1,0 +1,76 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $COLOR_GRAY;
+    padding: 79px 67px;
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        max-width: 1170px;
+        width: 100%;
+        gap: 118px;
+
+        @media screen and (max-width: 1050px) {
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 800px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 550px) {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__logo {
+        width: 130px;
+        object-fit: cover;
+        color: $COLOR_WHITE;
+    }
+
+    &__fone {
+        @include font ($fontRoboto, normal);
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    &__mail {
+        @include font ($fontRoboto, normal);
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    &__title {
+        @include font ($fontRoboto, normal);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $COLOR_WHITE;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 33px;
+        gap: 15px;
+    }
+
+    &__link {
+        @include font ($fontRoboto, normal);
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+    }
+}

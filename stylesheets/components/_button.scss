@@ -1,0 +1,10 @@
+.button {
+    width: 205px;
+    height: 64px;
+    border: none;
+
+    &__span {
+        @include font ($fontRoboto, normal);
+        color: $COLOR_WHITE;
+    }
+}

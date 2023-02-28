@@ -1,0 +1,4 @@
+@mixin font($family, $style) {
+    font-family: $family;
+    font-style: $style;
+}

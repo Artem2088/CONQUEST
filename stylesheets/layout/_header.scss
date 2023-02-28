@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 10px 26px;
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        max-width: 1170px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 380px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__li {
+        @include font ($fontRoboto, normal);
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(85, 82, 72, 1);
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: row;
+        gap: 23px;
+    }
+
+    &__btn {
+        border: none;
+        list-style-type: none;
+        position: relative;
+    }
+
+    &__counter {
+        background-color: rgba(230, 200, 180, 1);
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+    }
+
+    &__counter-span {
+        @include font ($fontRoboto, normal);
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+}

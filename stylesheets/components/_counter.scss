@@ -1,0 +1,15 @@
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+
+    &__span {
+        box-sizing: border-box;
+        text-align: center;
+        color: $COLOR_DARK;
+    }
+}
